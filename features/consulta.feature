@@ -7,21 +7,22 @@ Funcionalidade: Consulta de produtos
     Cenário: Consulta
         Dado que eu acesse o site da petz
         Quando consulto o produto com: "Ração"
-        Então devo ser redirecionado para a pagina de resultados da busca com: "Busca"
-    
+            E seleciono algum dos produtos
+            E adiciono ao carrinho
+        Então devo ser redirecionado para a pagina do carrinho
+
 
     Esquema do Cenario: Tentativa de Consulta
 
         Dado que eu acesse o site da petz
         Quando consulto o produto com: "<produto>"
-        Então devo ser redirecionado para a pagina de resultados da busca com: "<resultado>"
-       
+            E seleciono um dos produtos
+            E adiciono ao carrinho
+        Então devo ser redirecionado para a pagina do carrinho
+
         Exemplos:
-            | produto      | resultado |
-            | Medicamentos | Medicamentos |
-            | Antipulgas   | Antipulgas |
-            | Casinhas     | Casinhas |
-            | Tapetes      | Tapetes |
-
-
-  
+            | produto      |
+            | Medicamentos |
+            | Antipulgas   |
+            | Casinhas     |
+            | Tapetes      |

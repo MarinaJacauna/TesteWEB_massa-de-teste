@@ -1,4 +1,4 @@
-#require "allure-cucumber"
+require "allure-cucumber"
 require "capybara"
 require "capybara/cucumber"
 require_relative "actions"
